@@ -20,7 +20,7 @@ Like almost every answer, it depends. Here are some observations:
 For the example that's coded here, with 10,000 segments and a somewhat realistically random distribution of data, we get the following timings:
 
 | Format           | Per-iteration time (s) | One-off setup time (s) | File size (MiB) |
-+------------------+------------------------+------------------------+-----------------+
+|------------------|------------------------|------------------------|-----------------|
 | FlatBuffers      |                1.85e-6 |                2.7e-3  |            36   |
 | Protocol Buffers |               16.92    |                0.349   |            46   |
 | ORC              |                0.134   |                0.450   |             5.3 |
