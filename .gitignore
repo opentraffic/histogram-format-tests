@@ -1,0 +1,18 @@
+# editor temporaries
+*~
+java/.idea
+java/java.iml
+
+# generated files
+*_generated.h
+*.pb.h
+*.pb.cc
+java/target
+make_sample_tile
+query_sample_tile
+query_sample_tile_pbf
+
+# sample outputs
+sample.tile*
+java/my-file.orc
+java/.my-file.orc.crc

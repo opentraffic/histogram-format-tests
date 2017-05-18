@@ -1,0 +1,24 @@
+syntax = "proto2";
+package OpenTraffic.pbf;
+
+enum VehicleType {
+  AUTO = 0;
+}
+
+message Entry {
+  optional uint32 day_hour = 1;
+  optional uint32 next_segment_idx = 2;
+  optional uint32 speed_bucket = 3;
+  optional uint32 count = 4;
+}
+
+message Segment {
+  optional uint32 segment_id = 1;
+  repeated uint32 next_segment_ids = 2;
+  repeated Entry entries = 3;
+}
+
+message Histogram {
+  optional VehicleType vehicle_type = 1;
+  repeated Segment segments = 2;
+}
