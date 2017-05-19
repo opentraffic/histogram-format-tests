@@ -11,6 +11,8 @@ java/target
 make_sample_tile
 query_sample_tile
 query_sample_tile_pbf
+query_sample_tile_parquet
+convert_fb_to_parquet
 
 # sample outputs
 sample.tile*
